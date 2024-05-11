@@ -13,6 +13,10 @@
 </head>
 <body>
 <h1>简历填写界面</h1>
+<%--用来获取名为"resume"的属性值，并将其转换为Resume对象类型的示例。
+然后通过判断resume是否为null来决定接下来的操作。
+如果resume为null，则执行if语句块中的代码，否则执行else语句块中的代码。
+--%>
 <%
     Resume resume = (Resume) request.getAttribute("resume");
     if (resume==null){
